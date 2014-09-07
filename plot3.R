@@ -5,7 +5,7 @@
 # Date: 7 August 2014
 #
 # Plots the relationship between days of week and various Energy sub metering.
-# Presumes the file household_power_consumption.txt exists in the same directory.
+# Presumes the file project1_datafile.Rda exists in the same directory.
 #
 ####
 

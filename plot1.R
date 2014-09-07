@@ -5,7 +5,7 @@
 # Date: 7 August 2014
 #
 # Create a basic histogram showing the frequency of Global Active Power (in kilowatts).
-# Presumes the file household_power_consumption.txt exists in the same directory.
+# Presumes the file project1_datafile.Rda exists in the same directory.
 #
 ####
 
