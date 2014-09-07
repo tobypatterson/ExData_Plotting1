@@ -9,8 +9,15 @@
 #
 ####
 
-## Read in the table data
-power = load('project1_datafile.Rda')
+# Read in the table data
+# Note you may need to run generate_datafile.R if this file does not exist
+data_file = 'project1_datafile.Rda'
+if ( !file.exists(data_file)) {
+  stop('Run generaate_datafile.R to create the project working datafile.')
+}
+
+# We're save
+power = load(data_file)
 
 # Output to file
 canvas_size = 480
