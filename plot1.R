@@ -10,22 +10,7 @@
 ####
 
 ## Read in the table data
-power = read.table(
-  file='household_power_consumption.txt',
-  sep=';',
-  header=T,
-  colClasses=c('character','character','numeric','numeric','numeric','numeric','numeric','numeric','numeric'),
-  na.strings=c("NA", "?")
-  #,nrows=100000
-)
-
-## Convert dates and subset for 
-date_format = "%d/%m/%Y"
-power$Date = as.Date(as.character(power$Date), date_format)
-data = subset(
-  power,
-  Date >= as.Date('01/02/2007', date_format) & Date < as.Date('03/02/2007', date_format)
-)
+power = load('project1_datafile.Rda')
 
 # Plot the relationship
 canvas_size = 480

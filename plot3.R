@@ -10,23 +10,7 @@
 ####
 
 ## Read in the table data
-power = read.table(
-  file='household_power_consumption.txt',
-  sep=';',
-  header=T,
-  colClasses=c('character','character','numeric','numeric','numeric','numeric','numeric','numeric','numeric'),
-  na.strings=c("NA", "?")
-  #,nrows=10000
-)
-
-## Convert dates and subset for range 
-date_format = "%d/%m/%Y"
-power$DateTime = strptime(paste(power$Date, power$Time), format = "%d/%m/%Y %H:%M:%S")
-power$Date = as.Date(power$Date, date_format)
-data = subset(
-  power,
-  Date >= as.Date('01/02/2007', date_format) & Date < as.Date('03/02/2007', date_format)
-)
+power = load('project1_datafile.Rda')
 
 # Output to file
 canvas_size = 480

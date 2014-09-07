@@ -4,7 +4,7 @@ This repo contains the four R code files and associated data plots for the *Proj
 
 ## Data Files
 
-The data for these plots are available online, and a copy of the specific version of the dataset is contained in this repository. Please note that the datafile must be in the directory in which the scripts are run.
+The original data for these plots are available online, and a copy of the specific version of the dataset is contained in this repository. Please note that the datafile must be in the directory in which the scripts are run.
 
 * <b>Dataset</b>: <a href="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip">Electric power consumption</a> [20Mb]
 
@@ -30,6 +30,9 @@ web site</a>:
 <li><b>Sub_metering_3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
 </ol>
 
+## Generating the datafile
+
+The utility generate_datafile.R can be used to subset the data for the specific dates of [1,2] Feburary 2007.  This smaller working datafile can easily be read into the scripts and generate the plots.
 
 ## Generating the plots
 
